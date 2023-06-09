@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Employees.Repositories
 {
-    public static class EmployeeRepositorycs
+    public class EmployeeRepositoryc
     {
         private static readonly EmployeeContext _employeeContext = new EmployeeContext();
 
@@ -22,6 +22,7 @@ namespace Employees.Repositories
         public static void RemoveByCar(Car car)
         {
             _employeeContext.Employees.Remove(_employeeContext.Employees.FirstOrDefault(x => x.Car == car));
+            _employeeContext.SaveChanges();
         }
         public static IEnumerable<Employee> FindAllByName(string name)
         {

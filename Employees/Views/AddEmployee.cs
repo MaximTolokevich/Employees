@@ -32,7 +32,7 @@ namespace Employees
                 return;
             }
 
-            EmployeeRepositorycs.AddEmployee(AddNameTextBox.Text, (int)DropDownForAgeAdd.Value, car);
+            EmployeeRepositoryc.AddEmployee(AddNameTextBox.Text, (int)DropDownForAgeAdd.Value, car);
             MessageBox.Show("Succesfully added");
         }
 

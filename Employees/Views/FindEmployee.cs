@@ -24,7 +24,7 @@ namespace Employees
 
         private void FindEmployeeButton_Click(object sender, EventArgs e)
         {
-            var result = EmployeeRepositorycs.GetAllEmployees();
+            var result = EmployeeRepositoryc.GetAllEmployees();
             if (!string.IsNullOrEmpty(AddNameTextBox.Text))
             {
                 result = result.Where(x => x.Name.Equals(AddNameTextBox.Text));
@@ -34,9 +34,11 @@ namespace Employees
                 result = result.Where(x => x.Car.ToString().Equals(DropDownForCarAdd.Text));
             }
             var selectedAge = comboBox1.Text;
+            
             if (!string.IsNullOrEmpty(selectedAge))
             {
-                result = result.Where(x => x.Age.Equals(selectedAge));
+                var age = int.Parse(selectedAge);
+                result = result.Where(x => x.Age == age);
             }
             FindResultSource.findResult = result.ToList();
 

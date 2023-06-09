@@ -24,7 +24,7 @@ namespace Employees
         private void ViewEmployees_Load(object sender, EventArgs e)
         {
 
-            employeeBindingSource.DataSource = EmployeeRepositorycs.GetAllEmployees().ToList();
+            employeeBindingSource.DataSource = EmployeeRepositoryc.GetAllEmployees().ToList();
 
         }
     }

@@ -47,11 +47,11 @@
             // 
             // employeeRepositorycsBindingSource
             // 
-            employeeRepositorycsBindingSource.DataSource = typeof(Repositories.EmployeeRepositorycs);
+            employeeRepositorycsBindingSource.DataSource = typeof(Repositories.EmployeeRepositoryc);
             // 
             // employeeRepositorycsBindingSource1
             // 
-            employeeRepositorycsBindingSource1.DataSource = typeof(Repositories.EmployeeRepositorycs);
+            employeeRepositorycsBindingSource1.DataSource = typeof(Repositories.EmployeeRepositoryc);
             // 
             // employeeContextBindingSource
             // 
